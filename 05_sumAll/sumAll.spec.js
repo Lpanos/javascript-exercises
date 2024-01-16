@@ -10,6 +10,9 @@ describe('sumAll', () => {
   test.skip('works with larger number first', () => {
     expect(sumAll(123, 1)).toEqual(7626);
   });
+  test.skip('works with number other than 1', () => {
+    expect(sumAll(2, 10)).toEqual(54);
+  });
   test.skip('returns ERROR with negative numbers', () => {
     expect(sumAll(-10, 4)).toEqual('ERROR');
   });
